@@ -31,3 +31,8 @@ Create route tables (Public and Private). And associate the web, app and db subn
 ![5IG](https://github.com/user-attachments/assets/3fb3b64f-2af0-4a37-bf66-1d8b4659965b)
 
 ![6NAT](https://github.com/user-attachments/assets/f8817cdb-c80c-4631-9f25-e600f13d358d)
+
+
+# SSM Role
+Create a ssm role and attach to all the instances to connect
+![7Role](https://github.com/user-attachments/assets/321d9ed5-21fc-4cf2-9b9f-ed314be73f0e)
