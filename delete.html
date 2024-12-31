@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete User</title>
+</head>
+<body>
+    <h1>Delete User</h1>
+    <form id="deleteForm">
+        <label>User ID:</label><input type="text" id="id" required><br>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script>
+        // Function to handle delete form submission
+        document.getElementById('deleteForm').onsubmit = async (event) => {
+            event.preventDefault();  // Prevent default form submission
+
+            const id = document.getElementById('id').value;
+
+            try {
+                // Send DELETE request to the backend API
+                const response = await fetch(`http://internal-Internal-LB-3T-658802805.ap-south-1.elb.amazonaws.com:3000/delete/${id}`, {
+                    method: 'DELETE',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                // Handle success or failure
+                if (response.ok) {
+                    alert('User deleted!');
+                    location.href = 'index.html';  // Redirect to the user list page
+                } else {
+                    alert('Error deleting user');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error connecting to the server');
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <script>
+        async function fetchUsers() {
+            const response = await fetch('http://internal-Internal-LB-3T-658802805.ap-south-1.elb.amazonaws.com:3000/users');
+            const users = await response.json();
+            document.getElementById('userList').innerHTML = users.map(user => `
+                <li>${user.id}: ${user.name} (${user.email})</li>
+            `).join('');
+        }
+        window.onload = fetchUsers;
+    </script>
+</head>
+<body>
+    <h1>Users</h1>
+    <ul id="userList"></ul>
+    <a href="add.html">Add User</a>
+    <a href="delete.html">Delete User</a>
+</body>
+</html>

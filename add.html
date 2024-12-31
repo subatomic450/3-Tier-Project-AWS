@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+</head>
+<body>
+    <h1>Add User</h1>
+    <form id="addForm">
+        <label>Name:</label><input type="text" id="name" required><br>
+        <label>Email:</label><input type="email" id="email" required><br>
+        <button type="submit">Add</button>
+    </form>
+    
+    <script>
+        // Function to handle form submission
+        document.getElementById('addForm').onsubmit = async (event) => {
+            event.preventDefault();  // Prevent the default form submission
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            try {
+                // Send POST request to the backend API
+                const response = await fetch('http://internal-Internal-LB-3T-658802805.ap-south-1.elb.amazonaws.com:3000/add', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email })
+                });
+
+                // Handle success or failure
+                if (response.ok) {
+                    alert('User added!');
+                    location.href = 'index.html';  // Redirect to the user list page
+                } else {
+                    alert('Error adding user');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error connecting to the server');
+            }
+        };
+    </script>
+</body>
+</html>
