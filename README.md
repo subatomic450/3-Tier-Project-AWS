@@ -54,6 +54,37 @@ Create a external loadbalancer and associate web servers in target group. For th
 
 ![14LB](https://github.com/user-attachments/assets/39906f18-6496-4a67-b5c6-32f8c3d65e54)
 
+![18-ILB-3000-Listener](https://github.com/user-attachments/assets/37092f41-e54b-4d31-8a4f-77ad80efca34)
 
+# Configurations
+# Web Instances
+Connect to Web servers and install nginx and copy the html pages to /var/www/html/. (Edit the Ip address of Internal LoadBalancer in the code)
+# App Servers
+Connect to App servers and install Node.JS and MySql. 
 
+# Prepare Database:
+Create an RDS MySQL instance.
+Run the following SQL commands to create the database and table:
 
+CREATE DATABASE user_management;
+USE user_management;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+
+# In app tier
+
+Install Node.js
+
+sudo apt update
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
+
+Install dependencies and start the server on app folder:
+
+cd /home/ec2-user/app
+npm install
+node app.js (To start the service)
