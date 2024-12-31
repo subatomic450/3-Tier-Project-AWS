@@ -77,12 +77,17 @@ Create an RDS MySQL instance.
 Run the following SQL commands to create the database and table:
 
 CREATE DATABASE user_management;
+
 USE user_management;
 
 CREATE TABLE users (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     name VARCHAR(255) NOT NULL,
+    
     email VARCHAR(255) NOT NULL
+    
 );
 
 Edit the Config file
@@ -91,13 +96,17 @@ Edit the Config file
 
 
 sudo apt update
+
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
 sudo apt install -y nodejs
 
 Install dependencies and start the server on app folder:
 
 cd /home/ec2-user/app
+
 npm install
+
 node app.js (To start the service)
 
 ![100](https://github.com/user-attachments/assets/21bd48aa-7a79-41e2-9c73-6056648a6114)
