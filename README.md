@@ -23,7 +23,7 @@ Here is the overview of subnets
 ![3createsubnets](https://github.com/user-attachments/assets/c7010f78-1221-43b2-b8d3-63e61c4178ef)
 
 
-# Route Table
+# Route Tables and Gateways
 Create route tables (Public and Private). And associate the web, app and db subnets to private Routes. ANd for inbound and outbound traffic to public subnet associate a internet gateway to the vpc and public subnet. And create a NAT gateway in public subnet and add that to private subnet for internet acess to private instances.
 
 ![4RouteTable](https://github.com/user-attachments/assets/fb87ee80-0c01-4989-8647-517d49fa2c11)
@@ -39,7 +39,15 @@ Create a ssm role and later attach to all the instances to connect
 
 # EC2 Instances
 
-Create App tier and Web tier instances. I have created a Linux machines that are using Ubuntu as their operating systems.
+Create App tier and Web tier instances. I have created Linux machines that are running on Ubuntu.
 
 ![8Instances](https://github.com/user-attachments/assets/94248ba0-c6b3-48ca-aa56-3416571c0787)
+
+# Create Database Engine
+First create a DataBase subnet group and add db subnets to that group. Later create a database.
+![9RDSSubnetGroup](https://github.com/user-attachments/assets/630f2439-2753-4e62-a9de-0ab1d5ce3d04)
+![10RDSEngine](https://github.com/user-attachments/assets/9c9360a7-61a0-4c4c-a3cd-412cadcc1d09)
+
+
+
 
