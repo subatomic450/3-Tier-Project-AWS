@@ -24,4 +24,10 @@ Here is the overview of subnets
 
 
 # Route Table
-Create two route tables (Public and Private). And associate the web, app and db subnets to private Routes. ANd for inbound and outbound traffic to public subnet associate a internet gateway to the vpc and public subnet. And create a NAT gateway in public subnet and add that to private subnet for internet acess to private instances.
+Create route tables (Public and Private). And associate the web, app and db subnets to private Routes. ANd for inbound and outbound traffic to public subnet associate a internet gateway to the vpc and public subnet. And create a NAT gateway in public subnet and add that to private subnet for internet acess to private instances.
+
+![4RouteTable](https://github.com/user-attachments/assets/fb87ee80-0c01-4989-8647-517d49fa2c11)
+
+![5IG](https://github.com/user-attachments/assets/3fb3b64f-2af0-4a37-bf66-1d8b4659965b)
+
+![6NAT](https://github.com/user-attachments/assets/f8817cdb-c80c-4631-9f25-e600f13d358d)
