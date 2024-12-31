@@ -57,12 +57,12 @@ Create a external loadbalancer and associate web servers in target group. For th
 ![18-ILB-3000-Listener](https://github.com/user-attachments/assets/37092f41-e54b-4d31-8a4f-77ad80efca34)
 
 # Configurations
-# Web Instances
+## Web Instances
 Connect to Web servers and install nginx and copy the html pages to /var/www/html/. (Edit the Ip address of Internal LoadBalancer in the code)
-# App Servers
+## App Servers
 Connect to App servers and install Node.JS and MySql. 
 
-# Prepare Database:
+### Prepare Database:
 Create an RDS MySQL instance.
 Run the following SQL commands to create the database and table:
 
@@ -75,7 +75,7 @@ CREATE TABLE users (
     email VARCHAR(255) NOT NULL
 );
 
-# In app tier
+### In app tier
 
 Install Node.js
 
