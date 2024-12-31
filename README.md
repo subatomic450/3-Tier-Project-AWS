@@ -75,9 +75,10 @@ CREATE TABLE users (
     email VARCHAR(255) NOT NULL
 );
 
-### In app tier
+Edit the Config file
 
-Install Node.js
+### Install Node.js
+
 
 sudo apt update
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
@@ -88,3 +89,10 @@ Install dependencies and start the server on app folder:
 cd /home/ec2-user/app
 npm install
 node app.js (To start the service)
+
+![100](https://github.com/user-attachments/assets/21bd48aa-7a79-41e2-9c73-6056648a6114)
+
+![101Connect](https://github.com/user-attachments/assets/f347c6ae-9b32-4e10-beee-435423739f3d)
+
+
+
