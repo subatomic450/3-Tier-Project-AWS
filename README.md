@@ -44,9 +44,15 @@ Create App tier and Web tier instances. I have created Linux machines that are r
 ![8Instances](https://github.com/user-attachments/assets/94248ba0-c6b3-48ca-aa56-3416571c0787)
 
 # Create Database Engine
-First create a DataBase subnet group and add db subnets to that group. Later create a database.
+First create a DataBase subnet group and add db subnets to that group. Later create a database. I have used MySql.
 ![9RDSSubnetGroup](https://github.com/user-attachments/assets/630f2439-2753-4e62-a9de-0ab1d5ce3d04)
 ![10RDSEngine](https://github.com/user-attachments/assets/9c9360a7-61a0-4c4c-a3cd-412cadcc1d09)
+
+
+# External and Internal LoadBalancers
+Create a external loadbalancer and associate web servers in target group. For the Internal Loadbalancers associate App servers.
+
+![14LB](https://github.com/user-attachments/assets/39906f18-6496-4a67-b5c6-32f8c3d65e54)
 
 
 
