@@ -21,3 +21,7 @@ Create a vpc and add subnets for vpc. I have created 8 subnets for app tier, db 
 Here is the overview of subnets
 
 ![3createsubnets](https://github.com/user-attachments/assets/c7010f78-1221-43b2-b8d3-63e61c4178ef)
+
+
+# Route Table
+Create two route tables (Public and Private). And associate the web, app and db subnets to private Routes. ANd for inbound and outbound traffic to public subnet associate a internet gateway to the vpc and public subnet. And create a NAT gateway in public subnet and add that to private subnet for internet acess to private instances.
