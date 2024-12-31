@@ -11,7 +11,9 @@ A three-tier architecture is a software design pattern that organizes applicatio
 
 # Project Overview
 The project is an employee management system where users can:
+
 Add employee name and email through a web interface.
+
 Retrieve, update, or delete data.
 
 
@@ -31,7 +33,7 @@ Here is the overview of subnets
 
 
 # Route Tables and Gateways
-Create route tables (Public and Private). And associate the web, app and db subnets to private Routes. ANd for inbound and outbound traffic to public subnet associate a internet gateway to the vpc and public subnet. And create a NAT gateway in public subnet and add that to private subnet for internet acess to private instances.
+Create route tables (Public and Private). And associate the web, app and db subnets to private Routes. And for inbound and outbound traffic to public subnet associate a internet gateway to the vpc and public subnet. Also create a NAT gateway in public subnet and add that to private subnet for internet acess to private instances.
 
 ![4RouteTable](https://github.com/user-attachments/assets/fb87ee80-0c01-4989-8647-517d49fa2c11)
 
@@ -71,6 +73,7 @@ Connect to App servers and install Node.JS and MySql.
 
 ### Prepare Database:
 Create an RDS MySQL instance.
+
 Run the following SQL commands to create the database and table:
 
 CREATE DATABASE user_management;
