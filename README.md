@@ -8,8 +8,12 @@ A three-tier architecture is a software design pattern that organizes applicatio
 
 # Project Overview
 The project is an employee management system where users can:
-Add employee records through a web interface.
-Retrieve, update, or delete employee data.
+Add employee name and email through a web interface.
+Retrieve, update, or delete data.
+
+
+https://github.com/user-attachments/assets/a15a7b30-0ab3-4d93-ae85-7bae52a91457
+
 
 # Steps to implement:
 
@@ -95,4 +99,7 @@ node app.js (To start the service)
 ![101Connect](https://github.com/user-attachments/assets/f347c6ae-9b32-4e10-beee-435423739f3d)
 
 
+# Output
+
+https://github.com/user-attachments/assets/4f1984dd-122e-4709-9946-79b64ea86cef
 
