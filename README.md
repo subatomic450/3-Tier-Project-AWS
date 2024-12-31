@@ -3,7 +3,7 @@
 #Introduction to a Three-Tier Architecture Project
 A three-tier architecture is a software design pattern that organizes applications into three layers:
 1)Presentation Layer (Web Tier): Handles user interactions. In this project, we'll use NGINX as the web server.
-2)Application Layer (App Tier): Contains the backend logic. Here, we'll use Spring Boot for processing business logic.
+2)Application Layer (App Tier): Contains the backend logic. Here, we'll use Node jS for processing business logic.
 3)Database Layer (Database Tier): Stores data persistently. We'll use Amazon RDS with MySQL as the database engine.
 
 # Project Overview
