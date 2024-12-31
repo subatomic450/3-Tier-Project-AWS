@@ -18,4 +18,6 @@ Create a vpc and add subnets for vpc. I have created 8 subnets for app tier, db 
 
 ![1subcal](https://github.com/user-attachments/assets/ce5e4d90-7a35-4f1f-8aab-89844233ceaf)
 
+Here is the overview of subnets
+
 ![3createsubnets](https://github.com/user-attachments/assets/c7010f78-1221-43b2-b8d3-63e61c4178ef)
