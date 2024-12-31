@@ -34,5 +34,12 @@ Create route tables (Public and Private). And associate the web, app and db subn
 
 
 # SSM Role
-Create a ssm role and attach to all the instances to connect
+Create a ssm role and later attach to all the instances to connect
 ![7Role](https://github.com/user-attachments/assets/321d9ed5-21fc-4cf2-9b9f-ed314be73f0e)
+
+# EC2 Instances
+
+Create App tier and Web tier instances. I have created a Linux machines that are using Ubuntu as their operating systems.
+
+![8Instances](https://github.com/user-attachments/assets/94248ba0-c6b3-48ca-aa56-3416571c0787)
+
