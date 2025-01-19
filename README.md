@@ -1,5 +1,7 @@
 # 3-Tier-Project-AWS
 
+## - by Bhargav Yalamaddi
+
 # Introduction to a Three-Tier Architecture Project
 A three-tier architecture is a software design pattern that organizes applications into three layers:
 
