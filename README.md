@@ -1,6 +1,6 @@
 # 3-Tier-Project-AWS
 
-#Introduction to a Three-Tier Architecture Project
+# Introduction to a Three-Tier Architecture Project
 A three-tier architecture is a software design pattern that organizes applications into three layers:
 
 1)Presentation Layer (Web Tier): Handles user interactions. In this project, we'll use NGINX as the web server.
